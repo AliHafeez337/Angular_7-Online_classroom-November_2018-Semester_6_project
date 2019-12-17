@@ -1,0 +1,46 @@
+
+
+
+
+<!-- Container -->
+<div class="row">
+
+    <!-- Column -->
+    <div class="col-md-3 mb-3 d-flex align-items-stretch " *ngFor = "let course of courses" >
+      <div class="mc">
+  
+      <!--Card-->
+      <div class="card">
+  
+        <!--Card image-->
+        <div class="view">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(132).jpg" class="card-img-top"
+            alt="">
+          <a href="#">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+        <!--Card content-->
+        <div class="card-body">
+          <!--Title-->
+          <h4 class="card-title">Course: {{course.title}} </h4>
+          <!--Text-->
+          <p class="card-text">
+             Instructor:
+            {{course.teacher}}
+          </p>
+          <br>
+         
+        </div>
+  
+      </div>
+      <!--/.Card-->
+  
+    </div>
+    <!-- Column -->
+  
+    </div>
+  
+  </div>
+  <!-- Container -->

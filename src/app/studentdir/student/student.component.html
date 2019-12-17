@@ -1,0 +1,52 @@
+<div class="container">
+  <br>
+<h3>
+  You are registered in following courses:
+
+</h3>
+
+<!-- Container -->
+<div class="ngf" *ngFor = "let course of scourses" >
+    <div class="iff" *ngIf = "userId == course._id" >
+        <div class="card" *ngFor = "let coursee of course.courses" >
+            
+
+  
+  <div class="card-body" >
+     
+    <input type="text" value={{coursee}} class="card-title" readonly #courses style="border: none;
+        border-color: transparent;" >
+    <h6 class="card-subtitle mb-2 text-muted">  </h6>
+    
+    <button class="btn btn-primary card-link">View Detail</button>
+    
+    <button class="btn btn-secondary card-link" (click)="onDrop(courses.value)">Drop</button>
+    
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<hr>
+<button class="btn btn-primary" [routerLink] = "['/student/register']">
+  Click here for course registration
+</button>

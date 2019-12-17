@@ -1,0 +1,52 @@
+<h3>
+  Following courses are available for register:
+</h3>
+
+<!-- Container -->
+<div class="container">
+<div class="row">
+
+  <!-- Column -->
+  <div class="col-md-3 mb-3 d-flex align-items-stretch " *ngFor = "let course of rcourses" >
+    <div class="mc">
+
+    <!--Card-->
+    <div class="card">
+
+      <!--Card image-->
+      <div class="view">
+        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(132).jpg" class="card-img-top"
+          alt="">
+        <a href="#">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+        <!--Title-->
+        <input type="text" value={{course.title}} class="rc card-title field left" readonly #courses style="border: none;
+        border-color: transparent;" >
+        <!--Text-->
+        
+        <input type="text" value={{course.teacher}} class="card-title field left rc" readonly #instructors style="border: none;
+        border-color: transparent;" >
+        <br>
+        <button class="btn btn-primary" (click)="onCourseR(courses.value,instructors.value)" >
+          Click to Register
+        </button>
+        
+      </div>
+
+    </div>
+    <!--/.Card-->
+
+  </div>
+  <!-- Column -->
+
+  </div>
+
+</div>
+
+</div>
+<!-- Container -->

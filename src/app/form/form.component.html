@@ -1,0 +1,20 @@
+<p>
+  form works!
+</p>
+<div class="container">
+<form (ngSubmit)="onSignup(f)"  #f="ngForm"  >
+  <input type="text" placeholder="fname" name="fname" ngModel>
+  <br>
+  <input type="text" placeholder="lname" name="lname" ngModel>
+  <br>
+  <input type="password" placeholder="password" name="password" ngModel>
+  <br>
+  <input type="password" placeholder="cpassword" name="cpassword" ngModel>
+  <br>
+  <input type="email" placeholder="email" name="email" ngModel>
+  <br>
+  <input type="submit" class="btnRegister" value="Register">
+
+</form>
+
+</div>
